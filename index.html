@@ -5,38 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Fauna+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <main role="main">
         <header role="banner">
-            <h1>“ Hi there, I’m Maria<h1>
-
-            </h2> a web developer who has a passion for artful 
-                creations with a purpose to make everything efficient, user friendly,
-                 and bug free! ”</h2>
-                 <nav role="navigation">
-                    <button class='about-me'>About me</button>
-                    <button class='projects'>Projects</button>
-                    <button class='contact info '>Contact info</button>
-                    <button class='contact info '>Send me a message!</button>
+                   <nav role="navigation" class="navigation">
+                     <div class="hamburger">&#9776;</div>
+                         <ul class="menu">
+                             <li>
+                                 <button class='about-me'>About me</button>
+                             </li>
+                             <li>
+                                <button class='projects'>Projects</button> 
+                             </li>
+                             <li>
+                                <button class='contact info '>Contact info</button> 
+                             </li>
+                             <li>
+                                <button class='contact info '>Send me a message!</button>
+                             </li>
+                            </ul>
                  </nav>
         </header>
 
         <section class="about-me-container">
-                <p>I was introduced into the world of coding through my former career as a 
-                biomedical researcher. My job involved creating thousands of data points 
-                each week and trying to analyze them in spreadsheets was not cutting it for
-                 me. This made me dig more into the world of coding and I go hooked!</p>
+            <div class="headline">
+                <h1 class="name-header">Lorem ipsum<h1>
+            </div>
+            <div>
+                <h2 class="opening-line"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua.! </h2>
+            </div>
 
-                <p>My passion for creativity made me realize that a career as a web
-                developer was the right path for me, which would allow my creative side 
-                to keep developing. I took a leap of faith and joined a Thinkful, an engineer 
-                immersive bootcamp that has allowed me to expand my knowledge and skill in software 
-                engineering.</p>
+            <div class="about-me-text">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                     ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                     laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in. </p>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in.</p>
                 
-                <p>I also have other passions as a novice in the world of photography, cooking 
-                for my family,  and disk golf has become a regular sport for me.</p>
+                <p>ILorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                    ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            </div>
+            <div class="about-me-desk-pic"></div>
+
         </section>
         <div></div>
 
@@ -47,23 +64,24 @@
         <section>
          <h1>Projects</h1>
             <div class= 'quiz-app-container'>
-                <h2 class='travel-quiz'>Travel Quiz</h2>
-                <h2><img src="/images/quizapp.compressed.png" alt="Italian Trulli"></h2>
+                <h2 class='travel-quiz-title'>Travel Quiz</h2>
+                <h2> travel quiz picture here</h2>
                 <p class='travel-quiz-info'>
-                        Quiz App is an interactive application that allows a user to be 
-                        prompted through a series of 5 multiple choice questions regarding
-                        their knowledge of world landmarks and important world events.
-                        Feedback is generated after every answer is submitted. If the 
-                        wrong answered is submitted, user receives feedback with correct 
-                        answer choice. This app keeps track of the user score as they move
-                        to the next questions and the total score is generated at the end. 
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                 </p>
                 <button onclick="window.location.href = ' https://thinkful-ei-heron.github.io/Maria_Zayar_QuizzApp/ ';">Visit page</button>
                 <button onclick="window.location.href = ' https://github.com/thinkful-ei-heron/Maria_Zayar_QuizzApp.git';">View code</button>
-
-                <div class='js-icon'><i class="fab fa-js-square"></i></div>
-                <div class='html-icon'><i class="fab fa-html5"></i></div>
-                <div class="css-icon"><i class="fab fa-css3-alt"></i></div>
+                <div>
+                    <ul class="quiz-logos">
+                        <li class='js-icon'><i class="fab fa-js-square"></i></li>
+                        <li class='html-icon'><i class="fab fa-html5"></i></li>
+                        <li class="css-icon"><i class="fab fa-css3-alt"></i></li>
+                    </ul>
+                    
+                </div>
+                
 
                 <h2></h2>
                 <h2></h2>
@@ -72,15 +90,20 @@
 
         </section>
 
-        <section>
-            <h1 class="contact-info">Contact info</h1>
-            <ul></ul>
+        <section class="contact-info-container">
+            <h1>Contact info</h1>
+            <ul class="contact-info-text">
                 <li class="email">
-                    <address><a href="mal3905@gmail.com">mal3905@gmail.com</a><br></address>
+                    <address><a href="lorem@gmail.com">lorem@gmail.com</a><br></address>
                 </li>
-                <li class="location">Based in the DC-metro area</li>     
-                <li><i class="fab fa-linkedin" 
-                    onclick="window.location.href = ' https://www.linkedin.com/in/maria-danielson-339494bb/.io/Maria_Zayar_QuizzApp/ ';" ></i>       
+                <li class="location">Lorem ipsum dolor</li>  
+                <div class="contact-info-logos">
+                    <li class="linkedin"><i class="fab fa-linkedin" 
+                    onclick="window.location.href = ' https://www.linkedin.com/in/maria-danielson-339494bb/.io/Maria_Zayar_QuizzApp/ ';" ></i>
+                    <i class="fab fa-github-square"
+                    onclick="window.location.href = ' https://github.com/mal3905 ';"></i>
+                </div>   
+                       
             </ul>
         </section>
         
