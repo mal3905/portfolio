@@ -3,17 +3,10 @@
 }
 
 body {
-  font-family: "Open Sans",sans-serif; 
-  font-size: 20px;
-  color: #444;
-  text-align: center;
-  line-height: 1.5;
-  margin: px;
- 
+  background-color:#3B6157;
+  padding: 50px;
 }
-html {
-  align-content: 
-}
+
 
 /* nav,
 footer {
@@ -29,8 +22,18 @@ nav {
 
 }
 .navigation {
-  background-color: #808080;
   height: 60px;
+}
+button {
+	background:linear-gradient(to bottom, #B0887B 5%, #7AADA0 100%);
+	border-radius:5px;
+	color:black;
+	font-size:20px;
+	padding:6px 21px;
+  text-decoration:none;
+  font-family: 'Oleo Script', cursive;
+
+
 }
 
 
@@ -42,16 +45,26 @@ header {
   text-align: center;
   font: 30px;
 }
+h1 {
+  font-size: 90px;
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
+  color: #7AADA0;
+  text-align: center;
+  padding: 30px;
+}
 .name-header {
+  font-family: 'Oleo Script', cursive;
+  font-weight: bold;
   padding-top: 50px;
+  font-size: 70px;
+  color:#B0887B;
 }
 .menu {
   display: none;
   list-style-type: none;
   display: flex; 
   justify-content: space-evenly;
-  visibility: hidden;
-  background: gray;
   padding: 5px 5px 5px 0;
   color: white;
 }
@@ -69,23 +82,25 @@ padding-top: 0px;
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
   
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
-}
   
   .hamburger {
     display: flex;
     justify-content: flex-end;
     padding: 5px 5px 5px 0;
-    background: gray;    color: white;
+    background: gray;    
+    color: white;
   
   }
   .opening-line {
-    padding: 30px;
+    padding: 20px;
+    color: #7AADA0;
+    font-family: 'Oleo Script', cursive;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 50px;
   }
   .about-me-container {
     display: flex;
@@ -94,9 +109,28 @@ section:nth-child(even) {
     text-align: center;
 
   }
+  .about-me-text {
+    color: #7AADA0;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+  
+    
+  }
+  .get-to-know-me {
+    display: flex;
+    flex-direction: column;
+
+  }
 
   .travel-quiz-info {
-    padding: 30px
+    padding: 30px;
+    color: #7AADA0;
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
   }
   
   .quiz-logos {
@@ -105,20 +139,45 @@ section:nth-child(even) {
     flex-direction: row;
     justify-content: space-evenly;
     font-size: 30px;
-
+    color: grey;
     
   }
+  .travel-quiz-title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Fauna One', serif;
+    color:#B0887B;
+    font-weight: bold;
+
+  }
+  .quiz-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .quiz-pic {
+    display: flex;
+    justify-content: center;
+
+  }
+
  .contact-info-container {
    padding: 30px; 
+   text-align: center;
+   font-family: 'Fauna One', serif;
+   color: #7AADA0;
+
  }
  .contact-info-text  {
    list-style-type: none;
+   line-height: 30px;
  }
  .contact-info-logos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   font-size: 30px;
+  color: gray;
  }
 
 
@@ -132,6 +191,10 @@ section:nth-child(even) {
     display: flex;
     flex-direction: column;
     padding: 30px;
+    color:  #7AADA0;
+    font-family: 'Fauna One', serif;
+    text-align: center;
+
 
   }
   form {
@@ -142,12 +205,37 @@ section:nth-child(even) {
     flex-direction: column;
     justify-content: center;
     width: 100%;
+    border-radius: 10px;
+    border: 1px solid  #7AADA0;
+  }
+
+  footer {
+    color :#B0887B;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  
+  @media screen and (max-width: 520px) {
+    .name-header {
+      padding: 20px; 
+      margin: 10px;
+    }
   }
 
 
 
-
   @media screen and (min-width: 520px) {
+
+    
+
+    .menu {
+      visibility: visible;
+     }
+     .hamburger {
+      visibility: hidden;
+     }
+
     /* header {
      display: flex;
      flex-direction: row;
@@ -162,9 +250,9 @@ section:nth-child(even) {
     }
     section.product {
       width: 100%;
-    } */
-
+    }  */
 }
+
 
 
 
@@ -186,7 +274,6 @@ section:nth-child(even) {
      justify-content: space-evenly;  
    }
  
-
    main {
    display: flex;
    flex-direction: row;
