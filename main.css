@@ -9,8 +9,20 @@ body {
   line-height: 1.5;
   background: white;
   padding: 50px;
+}
 
- 
+a {
+  text-decoration: none;
+}
+
+.screen-shot {
+  align-self: center;
+}
+
+img {
+
+  max-width: 100%;
+  height: auto;
 
 }
 
@@ -47,11 +59,13 @@ nav {
 }
 
 button {
+  text-decoration: none;
   font-size: 25px;
   border: none;
   font-family: 'Indie Flower', cursive;
-  background: white
+  background: white;
   font-weight: bold;
+  cursor: pointer;
 }
 
 header {
@@ -103,7 +117,7 @@ section {
     list-style-type: none;
     display: flex;
     flex-direction: column;
-    
+    cursor: pointer;
   }
 
 
@@ -112,13 +126,23 @@ section {
  }
  .contact-info-text  {
    list-style-type: none;
+   font-size: 30px;
+   cursor:pointer;
+
+   
  }
  .contact-info-logos {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
   font-size: 30px;
  }
+ .location {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+
+
+
+ }
+
 
 
   @media screen and (max-width: 500px) {
