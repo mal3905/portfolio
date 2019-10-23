@@ -3,23 +3,37 @@
 }
 
 body {
-  font-family: "Open Sans",sans-serif; 
   font-size: 20px;
-  color: #444;
+  color: black;
   text-align: center;
   line-height: 1.5;
-  margin: px;
+  background: white;
+  padding: 50px;
+
  
-}
-html {
-  align-content: 
+
 }
 
-/* nav,
-footer {
-  padding: 1% 0;
-  background-color: #aaa;
-} */
+
+p, li, footer{
+font-family: 'Actor', sans-serif;
+font-size: 20px;
+}
+
+div {
+  font-family: 'Indie Flower', cursive;
+  
+}
+
+h1 {
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+h2 {
+  font-family: 'Indie Flower', cursive;
+  font-size: 45px;
+}
 
 nav {
   top: 0;
@@ -29,11 +43,16 @@ nav {
 
 }
 .navigation {
-  background-color: #808080;
   height: 60px;
 }
 
-
+button {
+  font-size: 25px;
+  border: none;
+  font-family: 'Indie Flower', cursive;
+  background: white
+  font-weight: bold;
+}
 
 header {
   padding: 0;
@@ -42,16 +61,12 @@ header {
   text-align: center;
   font: 30px;
 }
-.name-header {
-  padding-top: 50px;
-}
+
 .menu {
   display: none;
   list-style-type: none;
   display: flex; 
   justify-content: space-evenly;
-  visibility: hidden;
-  background: gray;
   padding: 5px 5px 5px 0;
   color: white;
 }
@@ -63,51 +78,35 @@ padding-top: 0px;
   color: white;
   font-weight: bold;
   padding: 15px;
-
 }
 
 section {
   min-height: 200px;
   padding: 6% 0;
-  background-color: #bbb;
   
 }
 
-section:nth-child(even) {
-  background-color: #ddd;
-}
-  
-  .hamburger {
-    display: flex;
-    justify-content: flex-end;
-    padding: 5px 5px 5px 0;
-    background: gray;    color: white;
-  
-  }
-  .opening-line {
-    padding: 30px;
-  }
+ 
   .about-me-container {
     display: flex;
     flex-direction: column;
-    padding: 30px;
     text-align: center;
 
   }
 
   .travel-quiz-info {
-    padding: 30px
+    padding: 30px;
   }
+ 
   
-  .quiz-logos {
+  .quiz-logos, .bk-logos{
     list-style-type: none;
     display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    font-size: 30px;
-
+    flex-direction: column;
     
   }
+
+
  .contact-info-container {
    padding: 30px; 
  }
@@ -122,77 +121,26 @@ section:nth-child(even) {
  }
 
 
-  /* .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  } */
-  
-  .contact-me-container {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-
-  }
-  form {
-    text-align: center;
-  }
-  textarea {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
-  }
-
-
-
-
-  @media screen and (min-width: 520px) {
-    /* header {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;
+  @media screen and (max-width: 500px) {
+    button {
+      font-size: 25px;
+      border: none;
+      font-family: 'Indie Flower', cursive;
+      background: rgb(249, 249, 249);
+      font-weight: bold;
+      border: 1px black solid
     }
-   main {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: space-evenly;
-     
+    .menu {
+      display: flex;
+      flex-direction: column;
     }
-    section.product {
-      width: 100%;
-    } */
 
-}
-
-
-
+    .opening-line {
+      margin-top: 200px;
+    }
 
 
 /*Wide screen*/
-@media screen and (min-width: 800px) {
-  .menu {
-    visibility: visible;
-   }
-   .hamburger {
-    visibility: hidden;
-   }
-   
-   
-   /* header {
-     display: flex;
-     flex-direction: row;
-     justify-content: space-evenly;  
-   }
+@media screen and (min-width: 500px) {
  
-
-   main {
-   display: flex;
-   flex-direction: row;
-   justify-content: space-evenly;
-   }
-   section.product{
-     margin:10px; 
-   } */
 }
