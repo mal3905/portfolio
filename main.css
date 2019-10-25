@@ -8,11 +8,12 @@ body {
   text-align: center;
   line-height: 1.5;
   background: white;
-  padding: 50px;
+  padding: 30px;
 }
 
 a {
   text-decoration: none;
+  color: rgb(161, 151, 151);
 }
 
 .screen-shot {
@@ -25,6 +26,11 @@ img {
   height: auto;
 
 }
+
+.headline {
+  margin-top: 200px;
+}
+
 
 
 p, li, footer{
@@ -59,13 +65,12 @@ nav {
 }
 
 button {
-  text-decoration: none;
   font-size: 25px;
   border: none;
   font-family: 'Indie Flower', cursive;
-  background: white;
+  background: rgb(249, 249, 249);
   font-weight: bold;
-  cursor: pointer;
+  border: 1px black solid
 }
 
 header {
@@ -77,13 +82,11 @@ header {
 }
 
 .menu {
-  display: none;
-  list-style-type: none;
-  display: flex; 
-  justify-content: space-evenly;
-  padding: 5px 5px 5px 0;
-  color: white;
+  display: flex;
+  flex-direction: column;
 }
+
+
 .menu ul {
 padding-top: 0px;
 }
@@ -134,37 +137,51 @@ section {
  .contact-info-logos {
   font-size: 30px;
  }
+
  .location {
   list-style-type: none;
   display: flex;
   justify-content: center;
-
-
-
  }
 
 
 
-  @media screen and (max-width: 500px) {
+
+  @media screen and (min-width: 500px) {
+  
+
     button {
+      text-decoration: none;
       font-size: 25px;
-      border: none;
       font-family: 'Indie Flower', cursive;
-      background: rgb(249, 249, 249);
+      background: white;
       font-weight: bold;
-      border: 1px black solid
+      cursor: pointer;
+
     }
+
     .menu {
+      display: none;
+      list-style-type: none;
+      display: flex; 
+      justify-content: space-evenly;
+      padding: 5px 5px 5px 0;
+      color: white;
+    }
+    ul.menu{
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      border-bottom: 1px solid black;
+      color: black;
+    }
+    .headline {
+      margin-top:50px;
     }
 
-    .opening-line {
-      margin-top: 200px;
+    body {
+      padding: 30px;
     }
+    
+  }
 
 
-/*Wide screen*/
-@media screen and (min-width: 500px) {
- 
-}

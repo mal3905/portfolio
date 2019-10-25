@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title></title>
+    <title>portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
@@ -14,35 +14,23 @@
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
-    <main role="main">
-        <header role="banner">
-                   <nav role="navigation" class="navigation">
-                         <ul class="menu">
-                             <li>
-                                 <button class='about-me'><a href="#about">About me</a></button>
-                             </li>
-                             <li>
-                                <button class='projects'><a href="#projects">Projects</a></button> 
-                             </li>
-                             <li>
-                                <button class='contact info'><a href="#contact">Contact info</a></button> 
-                             </li>
-                             <!-- <li>
-                                <button class='contact info '>Send me a message!</button>
-                             </li> -->
+    <main>
+        <header>
+                   <nav class="navigation">
+                            <ul class="menu">
+                                <li class='about-me'><a href="#about">About me</a></li>
+                                <li class="projects"><a href="#projects">Projects</a></li>
+                                <li class='contact info'><a href="#contact">Contact info</a></li>
                             </ul>
-                 </nav>
+                    </nav>
+   
         </header>
 
         <section class="about-me-container">
-            <div class="headline">
-                <h1 class="opening-line"> “ Hi there, I’m Maria a web developer who has a passion for artful creations
-                     with a purpose to make everything efficient, user friendly, and bug free! ” <h1>
-            
-            </div>        
+            <h1 class="headline"> “ Hi there, I’m Maria a web developer who has a passion for artful creations
+                     with a purpose to make everything efficient, user friendly, and bug free! ”</h1>   
             <div class="screen-shot"><img src="/images/me.jpg" alt="screen shot of author"></div>
 
-            
             <div id="about"> 
                 <h2 class="name-header">About me</h2>
             </div>
@@ -63,23 +51,14 @@
                 <p>I also have other passions as a novice in the world of photography, cooking for my family,  and 
                     disk gold has become a regular sport for me.
                 </p>
-
             </div>
-            <div class="about-me-desk-pic"></div>
-
         </section>
-        <div></div>
 
-        <!-- <section>
-           section 3
-        </section> -->
-
-        <section id="projects">
-         <h2>Projects</h2>
+            <h2>Projects</h2>
            <!-- Quizz APP -->
             <div class= 'quiz-app-container'>
                 <h3 class='travel-quiz-title'></h3>
-                <h3> <div class="quiz-pic"><img src="/images/quizapp.compressed.png" alt="picture of main page from quiz app"></div></h3>
+                <div class="quiz-pic"><img src="/images/quizapp.compressed.png" alt="picture of main page from quiz app"></div>
                 <p class='travel-quiz-info'>
                     Quiz App is an interactive application that allows a user to be prompted through a 
                     series of 5 multiple choice questions regarding their knowledge of world landmarks and important
@@ -87,77 +66,56 @@
                     submitted, user receives feedback with correct answer choice. This app keeps track of the user 
                     score as they move on to the next questions and the total score is generated at the end. 
                 </p>
-                <button onclick="window.location.href = ' https://thinkful-ei-heron.github.io/Maria_Zayar_QuizzApp/ ';" target="_blank" >Visit page</button>
-                <button onclick="window.location.href = ' https://github.com/thinkful-ei-heron/Maria_Zayar_QuizzApp.git';" target="_blank" >View code</button>
+                <button onclick="window.open('https://thinkful-ei-heron.github.io/Maria_Zayar_QuizzApp/ ','_blank')"> Visit page</button>
+                <button onclick="window.open('https://github.com/thinkful-ei-heron/Maria_Zayar_QuizzApp.git','_blank')">View code</button>
                 <div>
                     <ul class="quiz-logos">
-                        <li class='js-icon'><i class="fab fa-js-square"></i></li>
-                        <li class='html-icon'><i class="fab fa-html5"></i></li>
-                        <li class="css-icon"><i class="fab fa-css3-alt"></i></li>
+                        <li class="fab fa-js-square"></li>
+                        <li class="fab fa-html5"></li>
+                        <li class="fab fa-css3-alt"></li>
                     </ul>
                     
                 </div>
+            </div>
+
+            
                     <!-- Bookmark App -->
                 <div class= 'bookmark-container'>
-                        <h3 class='bookmark-title'></h3>
-                        <h3> <div class="bk-pic"><img src="/images/Bk-app-cp.png" alt="bookmark app picture of main page"></div></h3>
+                        <div class="bk-pic"><img src="/images/Bk-app-cp.png" alt="bookmark app picture of main page"></div>
                         <p class='bk-info'>
                                 This app lets user store and rate their custom web bookmarks. User can add booksmarks with title, url link, description,
                                 and a rating based on a 5-point system. All saved bookmarks appear in a condensed default state showing only title 
                                 and rating. Other details can be viewed when user clicks inside bookmark container. Bookmarks can also be deleted from list. 
-                            </p>
+                        </p>
                         <button onclick="window.open(' https://thinkful-ei-heron.github.io/maria-bookmark-app/', '_blank')" >Visit page</button>
                         <button onclick="window.open('https://github.com/thinkful-ei-heron/maria-bookmark-app.git', '_blank') ">View code</button>
-                        <div>
                             <ul class="bk-logos">
-                                <li class='js-icon'><i class="fab fa-js-square"></i></li>
-                                <i class="fab fa-react"></i>
-                                <li class="css-icon"><i class="fab fa-css3-alt"></i></li>
+                                <li class="fab fa-js-square"></li>
+                                <li class="fab fa-react"></li>
+                                <li class="fab fa-css3-alt"></li>
                             </ul>
-                            
-                        </div>
-                
+                      
+                </div>
 
-                <h2></h2>
-                <h2></h2>
-
-            </div>
-
-        </section>
 
         <section class="contact-info-container">
             <h2 id="contact">Contact info</h2>
             <ul class="contact-info-text">
                 <li class="email">
-                    <a href="mailto:mal3905@gmail.com" target="_blank"><li class="fas fa-envelope-square"></li></a></li>
-                <li class="linkedin"><i class="fab fa-linkedin" 
-                    onclick="window.open(' https://www.linkedin.com/in/maria-danielson-339494bb/.io/Maria_Zayar_QuizzApp/', '_blank')" ></i>
-                <i class="fab fa-github-square"
-                    onclick="window.open(' https://github.com/mal3905', '_blank')"></i>
+                    <a href="mailto:mal3905@gmail.com" target="_blank" class="fas fa-envelope-square"></a>
+                </li>
+                <li class="fab fa-linkedin"
+                    onclick="window.open(' https://www.linkedin.com/in/maria-danielson-339494bb/.io/Maria_Zayar_QuizzApp/', '_blank')" ></li>
+                <li class="fab fa-github-square"
+                    onclick="window.open(' https://github.com/mal3905', '_blank')"></li>
             </ul>
             
         <div class='dc-based'>
                 <h4 class="location">Based in the DC-metro area</h4>   
          </div>
-                     
-          
         </section>
-        
-        <!-- <section>
-                <div class="contact-me-container">
-                  
-                        <h2>Message me</h2>
-                        <p>to chat, exchange ideas, if you are interested in me joining your team, 
-                            anything really.</p>
-                            <form action="contact-me-form">
-                              <textarea id="subject" name="subject" placeholder="what can I do for you.." style="height:170px"></textarea>
-                              <button class='contact-me-button'>Send</button>
-                            </form>
-                          </div>
-                </div>
-        </section> -->
     </main>
-    <footer role="content-info">&copy;Maria 2019</footer>
+    <footer>&copy;Maria 2019</footer>
 
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/a972883930.js" crossorigin="anonymous"></script>
