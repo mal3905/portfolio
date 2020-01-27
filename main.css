@@ -7,35 +7,60 @@ body {
   color: black;
   text-align: center;
   line-height: 1.5;
-  background: white;
-  padding: 30px;
+  background-color: rgba(162, 158, 158, 0.475);
+  padding: 10px;
+}
+
+main {
+  padding: 20px;
+  background-image: url("./images/wrinkle.jpg");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	min-height: 100vh;
+
 }
 
 a {
   text-decoration: none;
-  color: rgb(161, 151, 151);
+  font-size: 20px;
+  color: rgb(103, 109, 194);
 }
 
 .screen-shot {
   align-self: center;
+
+}
+
+.pic-me {
+  max-width: 60%;
+  height: auto;
+  border-radius: 60%
 }
 
 img {
 
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 
 }
 
 .headline {
-  margin-top: 200px;
+  
+}
+
+p {
+  font-family: 'Actor', sans-serif;
+font-size: 20px;
+line-height: 35px;
+background-color: rgba(255, 255, 255, 0.359);
 }
 
 
-
-p, li, footer{
+li, footer{
 font-family: 'Actor', sans-serif;
 font-size: 20px;
+line-height: 35px;
 }
 
 div {
@@ -44,15 +69,21 @@ div {
 }
 
 h1 {
-  margin-top: 100px;
-  font-size: 30px;
+  font-size: 25px;
 }
 
 h2 {
   font-family: 'Indie Flower', cursive;
-  font-size: 45px;
+  font-size: 30px;
+  font-weight: bold;
+  border-top: 3px solid black;
+  margin-top: 17px;
+  margin-bottom: 34px;
 }
 
+.name-header {
+  border: none;
+}
 nav {
   top: 0;
   left: 0;
@@ -60,15 +91,14 @@ nav {
   z-index: 10;
 
 }
-.navigation {
-  height: 60px;
-}
+
 
 button {
   font-size: 25px;
   border: none;
   font-family: 'Indie Flower', cursive;
-  background: rgb(249, 249, 249);
+  background:rgba(162, 158, 158, 0.475);;
+  background-color: rgba(162, 158, 158, 0.475);
   font-weight: bold;
   border: 1px black solid
 }
@@ -128,14 +158,26 @@ section {
    padding: 30px; 
  }
  .contact-info-text  {
-   list-style-type: none;
-   font-size: 30px;
-   cursor:pointer;
+  list-style-type: none;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
 
-   
+  
+ }
+
+ .contact-info-text li {
+   display: flex;
+   flex-direction: column;
+   margin-right: 20px;
+   font-size: 20px;
  }
  .contact-info-logos {
   font-size: 30px;
+  display: flex;
+  flex-direction: row;
  }
 
  .location {
@@ -145,19 +187,26 @@ section {
  }
 
 
+ footer{
+  font-family: 'Actor', sans-serif;
+  font-size: 20px;
+  margin-top: 10px;
+  }
 
-
-  @media screen and (min-width: 500px) {
+  @media screen and (min-width: 460px) {
   
 
     button {
       text-decoration: none;
-      font-size: 25px;
+      font-size: 20px;
       font-family: 'Indie Flower', cursive;
-      background: white;
       font-weight: bold;
       cursor: pointer;
 
+    }
+
+    h1 {
+      font-size: 30px;
     }
 
     .menu {
@@ -178,8 +227,56 @@ section {
       margin-top:50px;
     }
 
-    body {
+    main {
+      padding: 40px;
+    }
+
+   a {
+
+    font-size: 20px;
+   }
+
+   body {
+     padding: 30px;
+   }
+
+    
+  }
+
+  @media screen and (min-width: 720px) {
+
+    body 
+    {
+      padding: 70px;
+    }
+
+    a {
+      font-size: 25px;
+    }
+
+    .about-me-container {
       padding: 30px;
     }
-    
+
+    h1 {
+      margin: 50px;
+      font-size: 30px;
+    }
+
+    main {
+    padding: 100px;
+    }
+
+    h2 {
+      font-size: 45px;
+    }
+
+    h3 {
+      font-size: 25px;
+    }
+
+    .contact-info-text li {
+
+      margin-right: 20px;
+    }
   }
