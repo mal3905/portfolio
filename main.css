@@ -6,14 +6,12 @@ body {
   font-size: 20px;
   color: black;
   text-align: center;
+  background-color: rgb(218, 229, 232);
   line-height: 1.5;
-  background-color: rgba(162, 158, 158, 0.475);
   padding: 10px;
 }
 
 main {
-  padding: 20px;
-  background-color: rgb(208, 226, 229);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -45,9 +43,7 @@ img {
 
 }
 
-.headline {
-  
-}
+
 
 p {
   font-family: 'Actor', sans-serif;
@@ -119,6 +115,8 @@ header {
 
 .menu ul {
 padding-top: 0px;
+position: relative;
+float: left;
 }
 .menu li{
   margin-right: 20px;
@@ -220,7 +218,7 @@ section {
     ul.menu{
       display: flex;
       flex-direction: row;
-      border-bottom: 1px solid black;
+      justify-content: flex-end;
       color: black;
     }
     .headline {
@@ -247,11 +245,11 @@ section {
 
     body 
     {
-      padding: 70px;
+      padding: 30px;
     }
 
     a {
-      font-size: 25px;
+      font-size: 20px;
     }
 
     .about-me-container {
@@ -263,9 +261,6 @@ section {
       font-size: 30px;
     }
 
-    main {
-    padding: 100px;
-    }
 
     h2 {
       font-size: 45px;
