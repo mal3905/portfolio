@@ -13,7 +13,7 @@ body {
 
 main {
   padding: 20px;
-  background-image: url("./images/wrinkle.jpg");
+  background-color: rgb(208, 226, 229);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
