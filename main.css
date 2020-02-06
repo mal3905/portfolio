@@ -19,27 +19,51 @@ main {
 
 }
 
+nav {
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  border-top: 2px solid black;
+  border-bottom: 4px solid rgba(16, 15, 15, 0.078);
+
+}
+
 a {
   text-decoration: none;
-  font-size: 20px;
-  color: rgb(103, 109, 194);
+  color: black;
+
 }
+
+nav a {
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  margin-right: 15px;
+}
+
+li {
+  margin-right: 10px;
+}
+
+
 
 .screen-shot {
   align-self: center;
+  padding: 40px;
 
 }
 
 .pic-me {
   max-width: 60%;
   height: auto;
-  border-radius: 60%
+  margin-top: 50px;
 }
 
 img {
 
-  max-width: 50%;
+  max-width: 80%;
   height: auto;
+  margin-top: 20px;
 
 }
 
@@ -47,9 +71,15 @@ img {
 
 p {
   font-family: 'Actor', sans-serif;
-font-size: 20px;
+font-size: 15px;
 line-height: 35px;
-background-color: rgba(255, 255, 255, 0.359);
+text-align: justify;
+text-justify: inter-word;
+text-indent: 5%;
+letter-spacing: 1.5px;
+padding-right: 20px;
+padding-left: 20px;
+
 }
 
 
@@ -59,18 +89,18 @@ font-size: 20px;
 line-height: 35px;
 }
 
-div {
-  font-family: 'Indie Flower', cursive;
-  
-}
+
 
 h1 {
   font-size: 25px;
+  margin-bottom: 10px;
+  letter-spacing: 2.8px;
+  line-height: 40px;
 }
 
 h2 {
-  font-family: 'Indie Flower', cursive;
-  font-size: 30px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 25px;
   font-weight: bold;
   border-top: 3px solid black;
   margin-top: 17px;
@@ -80,19 +110,13 @@ h2 {
 .name-header {
   border: none;
 }
-nav {
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 10;
 
-}
 
 
 button {
   font-size: 25px;
   border: none;
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Poppins', sans-serif;
   background:rgba(162, 158, 158, 0.475);;
   background-color: rgba(162, 158, 158, 0.475);
   font-weight: bold;
@@ -114,15 +138,15 @@ header {
 
 
 .menu ul {
-padding-top: 0px;
 position: relative;
 float: left;
+
 }
 .menu li{
-  margin-right: 20px;
-  color: white;
+  margin-right: 5px;
   font-weight: bold;
-  padding: 15px;
+  padding: 0px;
+  list-style:  none;
 }
 
 section {
@@ -147,10 +171,13 @@ section {
   .quiz-logos, .bk-logos{
     list-style-type: none;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 47px;
     cursor: pointer;
-  }
 
+}
 
  .contact-info-container {
    padding: 30px; 
@@ -166,9 +193,22 @@ section {
   
  }
 
- .contact-info-text li {
+ .fa-envelope-square:before {
+   font-size: 38px;
+ }
+
+ .contact li {
+  list-style-type: none;
+  padding-right: 25px;
+  font-size: 38px;
+
+ }
+
+ .contact {
    display: flex;
-   flex-direction: column;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
    margin-right: 20px;
    font-size: 20px;
  }
@@ -187,7 +227,7 @@ section {
 
  footer{
   font-family: 'Actor', sans-serif;
-  font-size: 20px;
+  font-size: 10px;
   margin-top: 10px;
   }
 
@@ -203,8 +243,18 @@ section {
 
     }
 
+
+    .navigation img {
+      width: 150px;
+      display: block;
+      float: left;
+      margin-top: 20px;
+    }
+
     h1 {
-      font-size: 30px;
+      font-size: 25px;
+      padding-right: 70px;
+      padding-left: 70px;
     }
 
     .menu {
@@ -218,26 +268,18 @@ section {
     ul.menu{
       display: flex;
       flex-direction: row;
-      justify-content: flex-end;
-      color: black;
+      margin-top: 10px;
+      margin-bottom: 5px
     }
-    .headline {
-      margin-top:50px;
-    }
-
-    main {
-      padding: 40px;
-    }
-
+  
    a {
-
-    font-size: 20px;
+    font-size: 25px;
+    
    }
-
-   body {
-     padding: 30px;
+   
+   .menu li {
+     padding: 0px;
    }
-
     
   }
 
@@ -249,7 +291,7 @@ section {
     }
 
     a {
-      font-size: 20px;
+      font-size: 30px;
     }
 
     .about-me-container {
@@ -257,14 +299,16 @@ section {
     }
 
     h1 {
-      margin: 50px;
-      font-size: 30px;
+    
+      font-size: 25px;
     }
 
 
     h2 {
-      font-size: 45px;
+      font-size: 30px;
     }
+
+    img
 
     h3 {
       font-size: 25px;
@@ -274,4 +318,18 @@ section {
 
       margin-right: 20px;
     }
+
+    /* .about-section {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+    } */
+
+    pic-me , img {
+      max-width: 49%;
+      height: auto;
+  
+    }
+
+
   }
