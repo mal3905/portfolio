@@ -1,43 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>portfolio</title>
+    <title>Maria Danielson</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico"/>
     <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/normalize/6.0.0/normalize.css">
-    <link href="https://fonts.googleapis.com/css?family=Lora&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fauna+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Oleo+Script&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Martel&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-    
     <link rel="stylesheet" type="text/css" href="main.css">
 </head>
 <body>
     <main>
         <header>
                    <nav class="navigation">
-                           <img class="logo" src="./images/name.png" alt="picture of main page from quiz app">
+                           <img class="logo" src="./assets/" alt="picture of main page from quiz app">
                             <ul class="menu">
                                 <li class='about-me'><a href="#about">ABOUT ME</a></li>
-                                <li class="projects"><a href="#projects">PROJECTS</a></li>
+                                <li class="projects"><a href="#work">WORK</a></li>
                                 <li class='contact info'><a href="#contact">CONTACT</a></li>
                             </ul>
                     </nav>
    
         </header>
        
-        <section class="about-me-container">
-            <div class="about-section">
-                <h1 class="headline"> “ Hi there, I’m Maria a web developer who has a passion for artful creations
-                        with a purpose to make everything efficient, user friendly, and bug free! ”</h1>   
-                   <img class="pic-me" src="me.jpg" alt="screen shot of author">
-             
+        <section class="parent-brand">
+            <div class="brand">
+                <img class="pic-brand" src="images/brand.png" alt="screen shot of career change">
+                <a class="scroll-btn" href="#about"><i class="fas fa-arrow-alt-circle-down"></i></a>
             </div>
-        </div>
+        </section>
+
+        <section class="about">
+
             <div id="about"> 
-                <h2 class="name-header">About me</h2>
+                <img class="pic-me" src="images/resumepic.png" alt="screen shot of author">
+                <h2 class="name-header">ABOUT ME</h2>
             </div>
 
             <div class="about-me-text">
@@ -46,17 +42,20 @@
 
                 <p>Five months later and hundreds of hours of coding at a software engineering intensive, I can 
                     call myself a developer. My creativity and curiosity have carried me to where I am, and I intend
-                    to use them as my tools to keep building and developing awesome applications and websites! 
-                    Coding is just part of who I am, but there are many other pieces that make me whole. I am a 
+                    to use them as my tools to keep building and developing awesome applications and websites!</p>
+                    
+                <p>Coding is just part of who I am, but there are many other pieces that make me whole. I am a 
                     dog mom, an avid cook and a novice in photography.  I aim high but dissect those big goals
                     into smaller pieces, so I don’t miss anything. I have a sweet tooth and eat ice cream even 
-                    if its below freezing outside. 
+                    if its below freezing outside.</p>
                 
                 <p>If you have any projects or ideas, I would love to hear about them and potentially become a collaborator.</p>
             </div>
         </section>
 
-            <h2 id="projects">Projects</h2>
+        <section class="slider-container">
+
+            <h2 id="work">WORK</h2>
            <!-- Quizz APP -->
             <div class= 'quiz-app-container'>
                 <h3 class='travel-quiz-title'>Travel Quiz</h3>
@@ -125,6 +124,7 @@
                                       
                                 </div>
 
+        </section>
 
         <section class="contact-info-container">
             <h2 id="contact">Contact info</h2>

@@ -2,21 +2,18 @@
   box-sizing: border-box;
 }
 
+h1 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
 body {
   font-size: 20px;
   color: black;
   text-align: center;
-  background-color: rgb(218, 229, 232);
   line-height: 1.5;
-  padding: 10px;
-}
-
-main {
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
-	min-height: 100vh;
-
+  margin: .01px;
 }
 
 nav {
@@ -26,13 +23,28 @@ nav {
   z-index: 10;
   border-top: 2px solid black;
   border-bottom: 4px solid rgba(16, 15, 15, 0.078);
+  background-color: rgb(218, 229, 232);
+
+}
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 
 }
 
 a {
   text-decoration: none;
   color: black;
+  font-weight: bold;
+  animation: infinite;
+  -webkit-animation: infinite; 
 
+}
+a:active {
+  color: plum;
 }
 
 nav a {
@@ -44,6 +56,36 @@ nav a {
 li {
   margin-right: 10px;
 }
+.brand {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; 
+  background-color: rgb(218, 229, 232);
+}
+
+.scroll-btn {
+padding-top: 40px;
+padding-bottom:  100px;
+font-size: 50px;
+padding-right: 0px;
+width: auto;
+height: auto;
+}
+
+.about  {
+  background-color: white;
+}
+
+.pic-brand {
+  margin-top: 100px;
+  width: 500px;
+  align-self: center;
+}
+
+.fas fa-arrow-alt-circle-down {
+  display: flex;
+  justify-content: center;
+}
 
 
 
@@ -53,18 +95,16 @@ li {
 
 }
 
+
+
+
 .pic-me {
-  max-width: 60%;
-  height: auto;
-  margin-top: 50px;
-}
-
-img {
-
-  max-width: 80%;
+  
   height: auto;
   margin-top: 20px;
-
+  /* border-right: 20px  rgb(185, 205, 211) dotted; */
+  border-radius: 100%;
+  border-left: 25px  rgb(185, 205, 211) dotted;
 }
 
 
@@ -100,12 +140,14 @@ h1 {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 25px;
-  font-weight: bold;
-  border-top: 3px solid black;
+  font-size: 30px;
+  font-weight: bolder;
   margin-top: 17px;
   margin-bottom: 34px;
+  color: rgb(178, 205, 212);
+  font-weight: bolder;
 }
+
 
 .name-header {
   border: none;
@@ -149,19 +191,6 @@ float: left;
   list-style:  none;
 }
 
-section {
-  min-height: 200px;
-  padding: 6% 0;
-  
-}
-
- 
-  .about-me-container {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-
-  }
 
   .travel-quiz-info {
     padding: 30px;
@@ -241,7 +270,7 @@ section {
 
 
     .navigation img {
-      width: 150px;
+      width: 250px;
       display: block;
       float: left;
       margin-top: 20px;
@@ -264,7 +293,7 @@ section {
     ul.menu{
       display: flex;
       flex-direction: row;
-      margin-top: 10px;
+      margin-top: 23px;
       margin-bottom: 5px
     }
   
@@ -281,18 +310,16 @@ section {
 
   @media screen and (min-width: 720px) {
 
-    body 
-    {
-      padding: 30px;
+    .about {
+      padding: 90px;
     }
 
     a {
       font-size: 30px;
     }
 
-    .about-me-container {
-      padding: 30px;
-    }
+  
+
 
     h1 {
     
@@ -301,10 +328,12 @@ section {
 
 
     h2 {
-      font-size: 30px;
+      font-size: 55px;
     }
 
-    img
+    img{
+      width: 300px;
+    }
 
     h3 {
       font-size: 25px;
@@ -322,7 +351,6 @@ section {
     } */
 
     pic-me , img {
-      max-width: 49%;
       height: auto;
   
     }
