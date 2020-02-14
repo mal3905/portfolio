@@ -85,6 +85,8 @@ height: auto;
 .fas fa-arrow-alt-circle-down {
   display: flex;
   justify-content: center;
+
+
 }
 
 
@@ -156,14 +158,26 @@ h2 {
 
 
 button {
-  font-size: 25px;
+  font-size: 15px;
+  padding: 15px;
   border: none;
-  font-family: 'Poppins', sans-serif;
-  background:rgba(162, 158, 158, 0.475);;
-  background-color: rgba(162, 158, 158, 0.475);
-  font-weight: bold;
-  border: 1px black solid
+  background-color:  rgba(189, 229, 239, 0.304);
+  border-left: 8px  rgb(178, 205, 212) dotted;
+  border-radius: 50%;
+  align-self: center;
+  margin-top: 10px;
+  margin-right: 30px;
+  cursor: pointer;
+  width: 80px;
+  box-shadow: 0px -3px 4px 2px #88888877;
 }
+
+.btn-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 
 header {
   padding: 0;
@@ -208,6 +222,54 @@ float: left;
 
 }
 
+#slider {
+  overflow: hidden;
+}
+
+#slider figure {
+  position: relative;
+  width: 500%;
+  margin: 0px;
+  left: 0;
+  animation: 20s slider infinite;
+  border: 10px rgb(17, 17, 19) solid;
+}
+#slider figure img {
+  float: left;
+  width: 20%;
+}
+@keyframes slider {
+  0% {
+      left:0;
+  }
+  20% {
+    left: 0;
+  }
+  25% {
+    left: -100%;
+  }
+  45% {
+    left: -100%
+  }
+  50%{
+    left: -200%;
+  }
+  70% {
+    left: -200%
+  }
+  75% {
+    left: -300%;
+  }
+  95% {
+    left: -300%
+  }
+  100% {
+    left: -400%
+  }
+
+}
+
+
  .contact-info-container {
    padding: 30px; 
  }
@@ -221,6 +283,25 @@ float: left;
 
   
  }
+ .fa-arrow-alt-circle-down:before {
+  content: "\f358";
+  box-shadow: 0px 0px 4px 3px rgb(90, 130, 142);
+  border-radius: 100%;
+}
+
+
+@keyframes glowing {
+
+  0% { background-color: #5f9aa9; box-shadow: 0 0 3px #8099ba; }
+  50% { background-color: #8eb9bf; box-shadow: 0 0 10px #c5c9d0; }
+  100% { background-color: #dce4ea; box-shadow: 0 0 3px #7899d7; }
+  }
+  
+  .fa-arrow-alt-circle-down:before {
+    animation: glowing 1300ms infinite;
+    }
+
+
 
  .fa-envelope-square:before {
    font-size: 38px;
@@ -260,11 +341,7 @@ float: left;
   
 
     button {
-      text-decoration: none;
       font-size: 20px;
-      font-family: 'Indie Flower', cursive;
-      font-weight: bold;
-      cursor: pointer;
 
     }
 
