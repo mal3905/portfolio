@@ -21,6 +21,8 @@ body {
 }
 
 nav {
+  display: flex;
+  flex-direction: column-reverse;
   top: 0;
   left: 0;
   right: 0;
@@ -36,7 +38,12 @@ section {
   display: flex;
   flex-direction: column;
   text-align: center;
+ 
+}
 
+.work {
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 a {
@@ -53,7 +60,7 @@ a:active {
 
 nav a {
   font-family: 'Poppins', sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   margin-right: 15px;
 }
 
@@ -84,6 +91,7 @@ height: auto;
   margin-top: 100px;
   width: 500px;
   align-self: center;
+  padding: 20px;
 }
 
 .fas fa-arrow-alt-circle-down {
@@ -105,7 +113,7 @@ height: auto;
 
 
 .pic-me {
-  
+  width: 320px;
   height: auto;
   margin-top: 20px;
   /* border-right: 20px  rgb(185, 205, 211) dotted; */
@@ -117,14 +125,15 @@ height: auto;
 
 p {
   font-family: 'Actor', sans-serif;
-font-size: 15px;
-line-height: 35px;
-text-align: justify;
-text-justify: inter-word;
-text-indent: 5%;
-letter-spacing: 1.5px;
-padding-right: 20px;
-padding-left: 20px;
+  font-size: 20px;
+  line-height: 40px;
+  text-align: justify;
+  text-justify: inter-word;
+  text-indent: 5%;
+  letter-spacing: 1.5px;
+  padding-right: 40px;
+  padding-left: 40px;
+}
 
 }
 
@@ -146,7 +155,7 @@ h1 {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 30px;
+  font-size: 60px;
   font-weight: bolder;
   margin-top: 17px;
   margin-bottom: 34px;
@@ -162,11 +171,11 @@ h2 {
 
 
 button {
-  font-size: 15px;
-  padding: 15px;
+  font-size: 20px;
+  padding: 12px;
   border: none;
-  background-color:  rgba(189, 229, 239, 0.304);
-  border-left: 8px  rgb(178, 205, 212) dotted;
+  background-color: rgba(189, 229, 239, 0.304);
+  border-left: 8px rgb(178, 205, 212) dotted;
   border-radius: 50%;
   align-self: center;
   margin-top: 10px;
@@ -174,12 +183,14 @@ button {
   cursor: pointer;
   width: 80px;
   box-shadow: 0px -3px 4px 2px #88888877;
+  font-weight: bolder;
 }
 
 .btn-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  margin-bottom: 60px;
 }
 
 
