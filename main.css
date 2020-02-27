@@ -45,6 +45,17 @@ section {
   margin-right: 50px;
   margin-left: 50px;
 }
+.apps {
+  display: flex;
+  flex-direction: row;
+
+}
+.dearbeer, .emma, .bookmarks {
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 a {
   text-decoration: none;
@@ -85,7 +96,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 65px;
+  font-size: 50px;
   font-weight: bold;
   height: -webkit-fill-available;
   margin: 0px;
@@ -239,22 +250,6 @@ float: left;
   list-style:  none;
 }
 
-
-  .travel-quiz-info {
-    padding: 30px;
-  }
- 
-  
-  .quiz-logos, .bk-logos{
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    margin-right: 47px;
-    cursor: pointer;
-
-}
 
 #slider {
   overflow: hidden;
@@ -415,6 +410,10 @@ float: left;
    .menu li {
      padding: 0px;
    }
+
+   .name {
+     font-size: 50px;
+   }
     
   }
 
@@ -426,7 +425,7 @@ float: left;
     }
 
     .name {
-      font-size: 90px;
+      font-size: 80px;
       line-height: 100px;
     }
 
