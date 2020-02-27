@@ -42,8 +42,8 @@ section {
 }
 
 .work {
-  margin-right: 10px;
-  margin-left: 10px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 a {
@@ -67,24 +67,44 @@ nav a {
 li {
   margin-right: 10px;
 }
+
 .brand {
   display: flex;
   justify-content: center;
   flex-direction: column; 
+  background-image: url(./assets/about/desk.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
   background-color: rgb(218, 229, 232);
 }
+.name { 
+  line-height: 90px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: rgb(239, 242, 243) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 65px;
+  font-weight: bold;
+  height: -webkit-fill-available;
+  margin: 0px;
+
+}
+
 
 .scroll-btn {
-padding-top: 40px;
-padding-bottom:  100px;
-font-size: 50px;
-padding-right: 0px;
-width: auto;
-height: auto;
+    /* padding-bottom: 100px; */
+    font-size: 80px;
+    padding-right: 0px;
+    width: auto;
+    height: auto;
+    padding-top: 100px;
 }
 
 .about  {
   background-color: white;
+  padding-top: 100px;
 }
 
 .pic-brand {
@@ -131,11 +151,10 @@ p {
   text-justify: inter-word;
   text-indent: 5%;
   letter-spacing: 1.5px;
-  padding-right: 40px;
-  padding-left: 40px;
-}
 
 }
+
+
 
 
 li, footer{
@@ -402,7 +421,13 @@ float: left;
   @media screen and (min-width: 720px) {
 
     .about {
-      padding: 90px;
+      padding: 100px 20px;
+     
+    }
+
+    .name {
+      font-size: 90px;
+      line-height: 100px;
     }
 
     a {
