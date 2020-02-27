@@ -80,23 +80,24 @@ li {
   background-color: rgb(218, 229, 232);
 }
 .name { 
-  line-height: 90px;
+  line-height: 50px;
   background-color: rgba(0, 0, 0, 0.5);
   color: rgb(239, 242, 243) ;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  font-size: 50px;
+  font-size: 30px;
   font-weight: bold;
   height: -webkit-fill-available;
   margin: 0px;
+  padding: 40px;
 
 }
 
 
 .scroll-btn {
     /* padding-bottom: 100px; */
-    font-size: 80px;
+    font-size: 40px;
     padding-right: 0px;
     width: auto;
     height: auto;
@@ -134,7 +135,7 @@ li {
 
 
 .pic-me {
-  width: 320px;
+  width: 220px;
   height: auto;
   margin-top: 20px;
   /* border-right: 20px  rgb(185, 205, 211) dotted; */
@@ -146,12 +147,11 @@ li {
 
 p {
   font-family: 'Actor', sans-serif;
-  font-size: 20px;
-  line-height: 40px;
+  font-size: 15px;
   text-align: justify;
   text-justify: inter-word;
   text-indent: 5%;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.2px;
 
 }
 
@@ -175,7 +175,7 @@ h1 {
 
 h2 {
   font-family: 'Poppins', sans-serif;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bolder;
   margin-top: 17px;
   margin-bottom: 34px;
@@ -238,6 +238,10 @@ float: left;
   font-weight: bold;
   padding: 0px;
   list-style:  none;
+}
+
+.about-me-text {
+  padding: 20px;
 }
 
 
@@ -396,13 +400,20 @@ float: left;
     font-size: 25px;
     
    }
+
+   p {
+    line-height: 30px;
+    font: 20px
+   }
    
+
    .menu li {
      padding: 0px;
    }
 
    .name {
      font-size: 50px;
+     padding: 10px;
    }
     
   }
@@ -440,6 +451,11 @@ float: left;
       width: 300px;
     }
 
+    .scroll-btn {
+      /* padding-bottom: 100px; */
+      font-size: 40px;
+    }
+
     .apps {
       display: flex;
       flex-direction: row;
@@ -470,8 +486,7 @@ float: left;
 
     pic-me , img {
       height: auto;
+      width: 320px;
   
     }
-
-
   }
